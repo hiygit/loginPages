@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,li{
+list-style: none;
+}
+a{
+display: block;
+color: #333;
+text-decoration: none;
+}
+input,textarea{
+border: none;
+background: none;
+outline: none;
+}
+textarea{
+resize: none;
+}
+
+.wrap{
+  width: 100vw;
+  height: 100vh;
+  background: url(images/loginBj.png) no-repeat;
+  background-size: 100% 100%;
+  padding: 5% 37%;
+}
+.centerBox{
+  padding: 70px 0;
+}
+.title{
+  color: #EECC72;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+.inputBox{
+  width: 100%;
+}
+.login-text{
+  color: #EECC72;
+  font-size: 35px;
+  letter-spacing: 6px;
+  padding: 35px 0;
+}
+.box{
+  width: 100%;
+  height: 80px;
+}
+.inputUser{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  margin-top: 10px;
+  border-bottom: 1px solid #DBB960;
+  position: relative;
+}
+.inputUser input{
+  width: 90%;
+  color: #666;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  padding: 10px 25px;
+  outline: none;
+  border: none;
+  background: none;
+}
+.inputUser span{
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
+.btnBox{
+  width: 100%;
+  height: 50px;
+  margin-top: 85px;
+  position: relative;
+}
+button{
+  outline: none;
+  border: none;
+  width: 100%;
+  color: #fff;
+  font-size: 27px;
+  text-align: center;
+  letter-spacing: 8px;
+  padding: 30px;
+  margin-bottom: 10px;
+}
+.btnClick{
+  background: url(./images/loginBtn.png) no-repeat;
+  background-size: 100% 100%;
+}
+.grayBtn{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(./images/loginBtnGray.png) no-repeat;
+  background-size: 100% 100%;
+  display: none;
+}
+
+.tip{
+  color: red;
+  line-height: 25px;
+  display: none;
+}
+
+::-webkit-input-placeholder{
+  color: #A3A3A3;
+}
+:-moz-placeholder{
+  color: #A3A3A3;
+}
+::-moz-placeholder{
+  color: #A3A3A3;
+}
+:-ms-input-placeholder{
+  color: #A3A3A3;
+}

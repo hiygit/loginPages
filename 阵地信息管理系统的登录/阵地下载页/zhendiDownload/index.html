@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>太原市公益广告阵地信息采集管理系统-下载页</title>
+		<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			#da {
+				width: 100%
+			}
+
+			#imgs1 {
+				position: absolute;
+
+				width: 100%;
+			}
+
+			#imgs2 {}
+
+			#img2 {
+				width: 100%;
+				height: auto;
+			}
+
+			#img3 {
+				display: none;
+				width: 100%;
+				height: auto;
+				z-index: 300;
+			}
+
+			#adn {
+				width: 90%;
+				position: absolute;
+				bottom: 8%;
+				margin-left: 5%;
+			}
+
+			#ios {
+				width: 43.5%;
+				position: absolute;
+				margin-top: 58.5%;
+				margin-left: 51%;
+			}
+		</style>
+
+		<script type="text/javascript">
+			window.onload = function() {
+				var ua = window.navigator.userAgent.toLowerCase();
+				if (ua.match(/MicroMessenger/i) == "micromessenger") {
+					//�Ƿ���΢�Ŵ�
+					$(document).ready(function() {
+						$("#adn").click(function() {
+							$("#img3").css("display", "block");
+							$("#img2").css("display", "none");
+							// $("#adn").css("display", "none");
+							// $("#ios").css("display", "none");
+
+						})
+						// $("#ios").click(function() {
+						// 	$("#img3").css("display", "block");
+						// 	$("#img2").css("display", "none");
+						// 	$("#adn").css("display", "none");
+						// 	$("#ios").css("display", "none");
+						// })
+					});
+				} else {
+					// 获取点击按钮属性
+					$(".im").click(function() {
+						var name = $(this).children().attr("name");
+						window.location.href = 'http://car.byqckj.com/down/app/app-release.apk';
+						// 判断点击按钮
+						// if (name == 1) {
+						// 	// 安卓端apk存放路径
+						// 	// $(document).ready(function(){
+						// 	// $("#imgs2").click(function(){
+						// 	window.location.href = 'http://car.byqckj.com/down/app/app-release.apk';
+						// 	// })
+						// 	// });
+						// } else if (name == 2) {
+						// 	// ios端apk存放路径
+						// 	window.location.href = 'https://itunes.apple.com/cn/app/jiu-pin-9kuai9bao-you/id1399526273';
+						// }
+					})
+
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="da">
+			<div id="imgs1">
+				<img src="images/zhendibg.png" alt="" id="img2" />
+				<img src="images/zhendizhezhao.png" alt="" id="img3">
+			</div>
+			<div id="adn" class="im">
+				<a href="javascript:;"><img style="width: 100%;" src="images/zhendidownloadBtn.png" name="1"></a>
+			</div>
+	</body>
+</html>
